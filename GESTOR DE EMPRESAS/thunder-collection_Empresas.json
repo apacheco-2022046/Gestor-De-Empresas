@@ -1,0 +1,203 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Empresas",
+    "dateExported": "2024-03-03T10:26:13.217Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "810f345d-1034-4e72-b38e-6f6060663108",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-03T19:26:39.198Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "97def03c-4643-4a65-804b-ca4383a2aa5e",
+            "name": "categoria",
+            "containerId": "",
+            "created": "2024-03-03T19:26:46.357Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e5946d49-0ee7-4646-9a65-6ab71fb778dd",
+            "name": "empresa",
+            "containerId": "",
+            "created": "2024-03-03T19:26:52.710Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "345e1032-46ca-48cd-9614-7f573244700e",
+            "name": "agregar user",
+            "containerId": "810f345d-1034-4e72-b38e-6f6060663108",
+            "created": "2024-03-03T19:27:24.389Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "b4567af6-f266-4903-99ef-748add06505c",
+            "name": "Agregar",
+            "containerId": "e5946d49-0ee7-4646-9a65-6ab71fb778dd",
+            "created": "2024-03-03T09:39:16.277Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "67935978-3317-4785-8bad-cf911adfa979",
+            "name": "actulizar",
+            "containerId": "e5946d49-0ee7-4646-9a65-6ab71fb778dd",
+            "created": "2024-03-03T10:08:12.029Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f5d7cb8e-8605-49fe-af4d-ed0eb5278369",
+            "colId": "148ba020-583c-4691-be4a-7254d25099d5",
+            "containerId": "345e1032-46ca-48cd-9614-7f573244700e",
+            "name": "agergar user",
+            "url": "localhost:2850/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T19:27:32.613Z",
+            "modified": "2024-03-09T01:58:05.669Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Alex"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Pacheco"
+                    },
+                    {
+                        "name": "email",
+                        "value": "apacheco@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "apacheco2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "adress",
+                        "value": "zona 7"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "fb9725f4-0ef3-4971-9910-1aa1381d9168",
+            "colId": "148ba020-583c-4691-be4a-7254d25099d5",
+            "containerId": "345e1032-46ca-48cd-9614-7f573244700e",
+            "name": "login",
+            "url": "localhost:2850/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-09T01:49:21.024Z",
+            "modified": "2024-03-09T01:58:29.518Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "apacheco2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a278d6b5-1799-46b4-8d8c-445aeefb782a",
+            "colId": "148ba020-583c-4691-be4a-7254d25099d5",
+            "containerId": "b4567af6-f266-4903-99ef-748add06505c",
+            "name": "Agregar Empresa",
+            "url": "localhost:2850/agregarE",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-03T09:39:23.587Z",
+            "modified": "2024-03-03T09:43:01.214Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViYzIyZGJkYWYyMTkwZjU3YWJjOTIiLCJ1c2VybmFtZSI6ImFwYWNoZWNvMiIsIm5hbWUiOiJBbGV4Iiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwOTk0OTUwOSwiZXhwIjoxNzA5OTYwMzA5fQ.ktZGnYloejtk6c5DeciNnpCKIL_Y1__t2emI8Dwh2mA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Coca Cola"
+                    },
+                    {
+                        "name": "impacto",
+                        "value": "Alto"
+                    },
+                    {
+                        "name": "añosTrayectoria",
+                        "value": "30"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "Bebidas gaseosas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4fe98f8-ace7-4c9e-b541-7de248f7dce9",
+            "colId": "148ba020-583c-4691-be4a-7254d25099d5",
+            "containerId": "67935978-3317-4785-8bad-cf911adfa979",
+            "name": "Actualizar empresa",
+            "url": "localhost:2850/updateEmpresa/65e4464c83fe9dc40213bdf4",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-03T10:08:20.368Z",
+            "modified": "2024-03-03T10:10:31.972Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "65e4464c83fe9dc40213bdf4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pepsi"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
